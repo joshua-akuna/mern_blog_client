@@ -24,17 +24,17 @@ const router = createBrowserRouter([
     element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
-      {index: true, element: <Home />},
+      {index: true, element: <Home/>},
       {path: 'posts/users/:id', element: <AuthorPost/>},
       {path: 'authors', element: <Authors/>},
       {path: 'posts/categories/:category', element: <CategoryPosts/>},
       {path: 'create', element: <CreatePost/>},
       {path: 'boardposts/:id', element: <Dashboard/>},
       {path: 'posts/:id/edit', element: <EditPost/>},
-      {path: 'login', element: <Login />},
+      {path: 'login', element: <Login/>},
       {path: 'logout', element: <Logout/>},
-      {path: "posts/:id",  element: <PostDetail />},
-      {path: 'register', element: <Register />},
+      {path: "posts/:id",  element: <PostDetail/>},
+      {path: 'register', element: <Register/>},
       {path: 'profile/:id', element: <UserProfile/>},
     ]
   }
